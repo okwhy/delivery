@@ -1,0 +1,13 @@
+databaseChangeLog:
+  - changeSet:
+      id: seed-data
+      author: aaaaaaa
+      changes:
+          - customChange:
+              class: dev.delivery.liquibasetasks.InitializerSeeder
+      rollback:
+          - sql:
+              sql: |
+                DELETE FROM performers;
+                DELETE FROM tags;
+                DELETE FROM products;
