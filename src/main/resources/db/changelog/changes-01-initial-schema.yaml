@@ -1,13 +1,10 @@
 databaseChangeLog:
   - changeSet:
-      id: 1737540233492-1
-      author: aaaaa (generated)
+      id: 1738152945667-1
+      author: aaaa (generated)
       changes:
         - createTable:
             columns:
-              - column:
-                  name: status
-                  type: SMALLINT
               - column:
                   constraints:
                     nullable: false
@@ -16,30 +13,27 @@ databaseChangeLog:
                   name: id
                   type: BIGINT
               - column:
+                  name: description
+                  type: VARCHAR(255)
+              - column:
+                  name: status
+                  type: VARCHAR(255)
+              - column:
+                  name: timestamp
+                  type: TIMESTAMP WITHOUT TIME ZONE
+              - column:
                   name: order_id
                   type: BIGINT
               - column:
                   name: preformer
                   type: BIGINT
-              - column:
-                  name: timestamp
-                  type: TIMESTAMP WITHOUT TIME ZONE
-              - column:
-                  name: description
-                  type: VARCHAR(255)
             tableName: orders_activity_entries
   - changeSet:
-      id: 1737540233492-2
+      id: 1738152945667-2
       author: aaaaa (generated)
       changes:
         - createTable:
             columns:
-              - column:
-                  name: role
-                  type: SMALLINT
-              - column:
-                  name: credential
-                  type: BIGINT
               - column:
                   constraints:
                     nullable: false
@@ -53,19 +47,19 @@ databaseChangeLog:
               - column:
                   name: phone
                   type: VARCHAR(255)
+              - column:
+                  name: role
+                  type: VARCHAR(255)
+              - column:
+                  name: credential
+                  type: BIGINT
             tableName: performers
   - changeSet:
-      id: 1737540233492-3
-      author: aaaaa (generated)
+      id: 1738152945667-3
+      author: aaaa (generated)
       changes:
         - createTable:
             columns:
-              - column:
-                  name: availability
-                  type: SMALLINT
-              - column:
-                  name: price
-                  type: numeric(38, 2)
               - column:
                   constraints:
                     nullable: false
@@ -74,17 +68,23 @@ databaseChangeLog:
                   name: id
                   type: BIGINT
               - column:
+                  name: availability
+                  type: VARCHAR(255)
+              - column:
                   constraints:
                     nullable: false
                   name: description
                   type: VARCHAR(255)
               - column:
+                  name: price
+                  type: numeric(38, 2)
+              - column:
                   name: title
                   type: VARCHAR(255)
             tableName: products
   - changeSet:
-      id: 1737540233492-4
-      author: aaaaa (generated)
+      id: 1738152945667-4
+      author: aaaa (generated)
       changes:
         - createTable:
             columns:
@@ -96,31 +96,31 @@ databaseChangeLog:
                   name: id
                   type: BIGINT
               - column:
-                  name: password_id
-                  type: BIGINT
-              - column:
                   name: username
                   type: VARCHAR(255)
+              - column:
+                  name: password_id
+                  type: BIGINT
             tableName: credentials
   - changeSet:
-      id: 1737540233492-5
-      author: aaaaa (generated)
+      id: 1738152945667-5
+      author: aaaa (generated)
       changes:
         - addUniqueConstraint:
             columnNames: credential
-            constraintName: performers_credential_key
+            constraintName: ukh10wiljoe82fsde2l68po4ehg
             tableName: performers
   - changeSet:
-      id: 1737540233492-6
-      author: aaaaa (generated)
+      id: 1738152945667-6
+      author: aaaa (generated)
       changes:
         - addUniqueConstraint:
             columnNames: password_id
-            constraintName: credentials_password_id_key
+            constraintName: uki9fl63tbtnk1pi4q8ytgy557s
             tableName: credentials
   - changeSet:
-      id: 1737540233492-7
-      author: aaaaa (generated)
+      id: 1738152945667-7
+      author: aaaa (generated)
       changes:
         - createSequence:
             cacheSize: 1
@@ -132,8 +132,8 @@ databaseChangeLog:
             sequenceName: addresses_seq
             startValue: 1
   - changeSet:
-      id: 1737540233492-8
-      author: aaaaa (generated)
+      id: 1738152945667-8
+      author: aaaa (generated)
       changes:
         - createSequence:
             cacheSize: 1
@@ -145,8 +145,8 @@ databaseChangeLog:
             sequenceName: boxes_seq
             startValue: 1
   - changeSet:
-      id: 1737540233492-9
-      author: aaaaa (generated)
+      id: 1738152945667-9
+      author: aaaa (generated)
       changes:
         - createSequence:
             cacheSize: 1
@@ -158,8 +158,8 @@ databaseChangeLog:
             sequenceName: clients_seq
             startValue: 1
   - changeSet:
-      id: 1737540233492-10
-      author: aaaaa (generated)
+      id: 1738152945667-10
+      author: aaaa (generated)
       changes:
         - createSequence:
             cacheSize: 1
@@ -171,8 +171,8 @@ databaseChangeLog:
             sequenceName: credentials_seq
             startValue: 1
   - changeSet:
-      id: 1737540233492-11
-      author: aaaaa (generated)
+      id: 1738152945667-11
+      author: aaaa (generated)
       changes:
         - createSequence:
             cacheSize: 1
@@ -184,8 +184,8 @@ databaseChangeLog:
             sequenceName: orders_activity_entries_seq
             startValue: 1
   - changeSet:
-      id: 1737540233492-12
-      author: aaaaa (generated)
+      id: 1738152945667-12
+      author: aaaa (generated)
       changes:
         - createSequence:
             cacheSize: 1
@@ -197,21 +197,8 @@ databaseChangeLog:
             sequenceName: orders_seq
             startValue: 1
   - changeSet:
-      id: 1737540233492-13
-      author: aaaaa (generated)
-      changes:
-        - createSequence:
-            cacheSize: 1
-            cycle: false
-            dataType: bigint
-            incrementBy: 50
-            maxValue: 9223372036854775807
-            minValue: 1
-            sequenceName: password_entity_seq
-            startValue: 1
-  - changeSet:
-      id: 1737540233492-14
-      author: aaaaa (generated)
+      id: 1738152945667-13
+      author: aaaa (generated)
       changes:
         - createSequence:
             cacheSize: 1
@@ -223,8 +210,8 @@ databaseChangeLog:
             sequenceName: password_seq
             startValue: 1
   - changeSet:
-      id: 1737540233492-15
-      author: aaaaa (generated)
+      id: 1738152945667-14
+      author: aaaa (generated)
       changes:
         - createSequence:
             cacheSize: 1
@@ -236,8 +223,8 @@ databaseChangeLog:
             sequenceName: performers_seq
             startValue: 1
   - changeSet:
-      id: 1737540233492-16
-      author: aaaaa (generated)
+      id: 1738152945667-15
+      author: aaaa (generated)
       changes:
         - createSequence:
             cacheSize: 1
@@ -249,8 +236,8 @@ databaseChangeLog:
             sequenceName: product_items_seq
             startValue: 1
   - changeSet:
-      id: 1737540233492-17
-      author: aaaaa (generated)
+      id: 1738152945667-16
+      author: aaaa (generated)
       changes:
         - createSequence:
             cacheSize: 1
@@ -262,8 +249,8 @@ databaseChangeLog:
             sequenceName: product_tags_seq
             startValue: 1
   - changeSet:
-      id: 1737540233492-18
-      author: aaaaa (generated)
+      id: 1738152945667-17
+      author: aaaa (generated)
       changes:
         - createSequence:
             cacheSize: 1
@@ -275,21 +262,8 @@ databaseChangeLog:
             sequenceName: products_seq
             startValue: 1
   - changeSet:
-      id: 1737540233492-19
-      author: aaaaa (generated)
-      changes:
-        - createSequence:
-            cacheSize: 1
-            cycle: false
-            dataType: bigint
-            incrementBy: 50
-            maxValue: 9223372036854775807
-            minValue: 1
-            sequenceName: products_tags_seq
-            startValue: 1
-  - changeSet:
-      id: 1737540233492-20
-      author: aaaaa (generated)
+      id: 1738152945667-18
+      author: aaaa (generated)
       changes:
         - createSequence:
             cacheSize: 1
@@ -301,21 +275,11 @@ databaseChangeLog:
             sequenceName: tags_seq
             startValue: 1
   - changeSet:
-      id: 1737540233492-21
-      author: aaaaa (generated)
+      id: 1738152945667-19
+      author: aaaa (generated)
       changes:
         - createTable:
             columns:
-              - column:
-                  constraints:
-                    nullable: false
-                  name: latitude
-                  type: FLOAT8
-              - column:
-                  constraints:
-                    nullable: false
-                  name: longitude
-                  type: FLOAT8
               - column:
                   constraints:
                     nullable: false
@@ -326,18 +290,23 @@ databaseChangeLog:
               - column:
                   name: address
                   type: VARCHAR(255)
-            tableName: addresses
-  - changeSet:
-      id: 1737540233492-22
-      author: aaaaa (generated)
-      changes:
-        - createTable:
-            columns:
               - column:
                   constraints:
                     nullable: false
-                  name: number
-                  type: INTEGER
+                  name: latitude
+                  type: FLOAT8
+              - column:
+                  constraints:
+                    nullable: false
+                  name: longitude
+                  type: FLOAT8
+            tableName: addresses
+  - changeSet:
+      id: 1738152945667-20
+      author: aaaa (generated)
+      changes:
+        - createTable:
+            columns:
               - column:
                   constraints:
                     nullable: false
@@ -345,10 +314,15 @@ databaseChangeLog:
                     primaryKeyName: boxes_pkey
                   name: id
                   type: BIGINT
+              - column:
+                  constraints:
+                    nullable: false
+                  name: number
+                  type: INTEGER
             tableName: boxes
   - changeSet:
-      id: 1737540233492-23
-      author: aaaaa (generated)
+      id: 1738152945667-21
+      author: aaaa (generated)
       changes:
         - createTable:
             columns:
@@ -367,20 +341,11 @@ databaseChangeLog:
                   type: VARCHAR(255)
             tableName: clients
   - changeSet:
-      id: 1737540233492-24
-      author: aaaaa (generated)
+      id: 1738152945667-22
+      author: aaaa (generated)
       changes:
         - createTable:
             columns:
-              - column:
-                  name: address
-                  type: BIGINT
-              - column:
-                  name: box
-                  type: BIGINT
-              - column:
-                  name: client
-                  type: BIGINT
               - column:
                   constraints:
                     nullable: false
@@ -391,10 +356,19 @@ databaseChangeLog:
               - column:
                   name: comment
                   type: VARCHAR(255)
+              - column:
+                  name: address
+                  type: BIGINT
+              - column:
+                  name: box
+                  type: BIGINT
+              - column:
+                  name: client
+                  type: BIGINT
             tableName: orders
   - changeSet:
-      id: 1737540233492-25
-      author: aaaaa (generated)
+      id: 1738152945667-23
+      author: aaaa (generated)
       changes:
         - createTable:
             columns:
@@ -410,14 +384,11 @@ databaseChangeLog:
                   type: VARCHAR(255)
             tableName: password
   - changeSet:
-      id: 1737540233492-26
-      author: aaaaa (generated)
+      id: 1738152945667-24
+      author: aaaa (generated)
       changes:
         - createTable:
             columns:
-              - column:
-                  name: quantity
-                  type: INTEGER
               - column:
                   constraints:
                     nullable: false
@@ -426,6 +397,9 @@ databaseChangeLog:
                   name: id
                   type: BIGINT
               - column:
+                  name: quantity
+                  type: INTEGER
+              - column:
                   name: order_ref
                   type: BIGINT
               - column:
@@ -433,8 +407,8 @@ databaseChangeLog:
                   type: BIGINT
             tableName: product_items
   - changeSet:
-      id: 1737540233492-27
-      author: aaaaa (generated)
+      id: 1738152945667-25
+      author: aaaa (generated)
       changes:
         - createTable:
             columns:
@@ -457,8 +431,8 @@ databaseChangeLog:
                   type: BIGINT
             tableName: product_tags
   - changeSet:
-      id: 1737540233492-28
-      author: aaaaa (generated)
+      id: 1738152945667-26
+      author: aaaa (generated)
       changes:
         - createTable:
             columns:
@@ -474,8 +448,8 @@ databaseChangeLog:
                   type: VARCHAR(255)
             tableName: tags
   - changeSet:
-      id: 1737540233492-29
-      author: aaaaa (generated)
+      id: 1738152945667-27
+      author: aaaa (generated)
       changes:
         - addForeignKeyConstraint:
             baseColumnNames: order_ref
@@ -489,8 +463,8 @@ databaseChangeLog:
             referencedTableName: orders
             validate: true
   - changeSet:
-      id: 1737540233492-30
-      author: aaaaa (generated)
+      id: 1738152945667-28
+      author: aaaa (generated)
       changes:
         - addForeignKeyConstraint:
             baseColumnNames: product_id
@@ -504,8 +478,8 @@ databaseChangeLog:
             referencedTableName: products
             validate: true
   - changeSet:
-      id: 1737540233492-31
-      author: aaaaa (generated)
+      id: 1738152945667-29
+      author: aaaa (generated)
       changes:
         - addForeignKeyConstraint:
             baseColumnNames: box
@@ -519,8 +493,8 @@ databaseChangeLog:
             referencedTableName: boxes
             validate: true
   - changeSet:
-      id: 1737540233492-32
-      author: aaaaa (generated)
+      id: 1738152945667-30
+      author: aaaa (generated)
       changes:
         - addForeignKeyConstraint:
             baseColumnNames: credential
@@ -534,8 +508,8 @@ databaseChangeLog:
             referencedTableName: credentials
             validate: true
   - changeSet:
-      id: 1737540233492-33
-      author: aaaaa (generated)
+      id: 1738152945667-31
+      author: aaaa (generated)
       changes:
         - addForeignKeyConstraint:
             baseColumnNames: product
@@ -549,8 +523,8 @@ databaseChangeLog:
             referencedTableName: products
             validate: true
   - changeSet:
-      id: 1737540233492-34
-      author: aaaaa (generated)
+      id: 1738152945667-32
+      author: aaaa (generated)
       changes:
         - addForeignKeyConstraint:
             baseColumnNames: password_id
@@ -564,8 +538,8 @@ databaseChangeLog:
             referencedTableName: password
             validate: true
   - changeSet:
-      id: 1737540233492-35
-      author: aaaaa (generated)
+      id: 1738152945667-33
+      author: aaaa (generated)
       changes:
         - addForeignKeyConstraint:
             baseColumnNames: preformer
@@ -579,8 +553,8 @@ databaseChangeLog:
             referencedTableName: performers
             validate: true
   - changeSet:
-      id: 1737540233492-36
-      author: aaaaa (generated)
+      id: 1738152945667-34
+      author: aaaa (generated)
       changes:
         - addForeignKeyConstraint:
             baseColumnNames: client
@@ -594,8 +568,8 @@ databaseChangeLog:
             referencedTableName: clients
             validate: true
   - changeSet:
-      id: 1737540233492-37
-      author: aaaaa (generated)
+      id: 1738152945667-35
+      author: aaaa (generated)
       changes:
         - addForeignKeyConstraint:
             baseColumnNames: address
@@ -609,8 +583,8 @@ databaseChangeLog:
             referencedTableName: addresses
             validate: true
   - changeSet:
-      id: 1737540233492-38
-      author: aaaaa (generated)
+      id: 1738152945667-36
+      author: aaaa (generated)
       changes:
         - addForeignKeyConstraint:
             baseColumnNames: tag_id
@@ -624,8 +598,8 @@ databaseChangeLog:
             referencedTableName: tags
             validate: true
   - changeSet:
-      id: 1737540233492-39
-      author: aaaaa (generated)
+      id: 1738152945667-37
+      author: aaaa (generated)
       changes:
         - addForeignKeyConstraint:
             baseColumnNames: order_id

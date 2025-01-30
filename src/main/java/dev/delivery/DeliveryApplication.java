@@ -7,17 +7,17 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
 public class DeliveryApplication {
-    private static InitializerService initializerService;
+    public static InitializerService initializerService;
 
     @Autowired
     public void setInitialLoader(InitializerService initializerService) {
         DeliveryApplication.initializerService = initializerService;
     }
 
-    //todo статусы и инициалайзер
+    //todo инициалайзер
     public static void main(String[] args) {
         SpringApplication.run(DeliveryApplication.class, args);
-        initializerService.init();
+//        initializerService.init();
     }
 
 }

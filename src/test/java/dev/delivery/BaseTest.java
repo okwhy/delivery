@@ -42,8 +42,7 @@ public class BaseTest {
     private static String packerToken;
     private static String courierToken;
 
-    @LocalServerPort
-    private int port;
+   
 
     @Container
     protected static final PostgreSQLContainer<?> postgres =

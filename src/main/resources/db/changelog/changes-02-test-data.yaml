@@ -4,7 +4,7 @@ databaseChangeLog:
       author: aaaaaaa
       changes:
           - customChange:
-              class: dev.delivery.liquibasetasks.InitializerSeeder
+              class: dev.delivery.liquibase.InitializerChange
       rollback:
           - sql:
               sql: |
