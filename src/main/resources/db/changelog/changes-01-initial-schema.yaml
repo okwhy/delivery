@@ -126,7 +126,7 @@ databaseChangeLog:
             cacheSize: 1
             cycle: false
             dataType: bigint
-            incrementBy: 50
+            incrementBy: 1
             maxValue: 9223372036854775807
             minValue: 1
             sequenceName: addresses_seq
@@ -139,7 +139,7 @@ databaseChangeLog:
             cacheSize: 1
             cycle: false
             dataType: bigint
-            incrementBy: 50
+            incrementBy: 1
             maxValue: 9223372036854775807
             minValue: 1
             sequenceName: boxes_seq
@@ -152,7 +152,7 @@ databaseChangeLog:
             cacheSize: 1
             cycle: false
             dataType: bigint
-            incrementBy: 50
+            incrementBy: 1
             maxValue: 9223372036854775807
             minValue: 1
             sequenceName: clients_seq
@@ -165,11 +165,11 @@ databaseChangeLog:
             cacheSize: 1
             cycle: false
             dataType: bigint
-            incrementBy: 50
+            incrementBy: 1
             maxValue: 9223372036854775807
-            minValue: 1
+            minValue: 11
             sequenceName: credentials_seq
-            startValue: 1
+            startValue: 11
   - changeSet:
       id: 1738152945667-11
       author: aaaa (generated)
@@ -178,7 +178,7 @@ databaseChangeLog:
             cacheSize: 1
             cycle: false
             dataType: bigint
-            incrementBy: 50
+            incrementBy: 1
             maxValue: 9223372036854775807
             minValue: 1
             sequenceName: orders_activity_entries_seq
@@ -191,7 +191,7 @@ databaseChangeLog:
             cacheSize: 1
             cycle: false
             dataType: bigint
-            incrementBy: 50
+            incrementBy: 1
             maxValue: 9223372036854775807
             minValue: 1
             sequenceName: orders_seq
@@ -204,11 +204,11 @@ databaseChangeLog:
             cacheSize: 1
             cycle: false
             dataType: bigint
-            incrementBy: 50
+            incrementBy: 1
             maxValue: 9223372036854775807
-            minValue: 1
+            minValue: 11
             sequenceName: password_seq
-            startValue: 1
+            startValue: 11
   - changeSet:
       id: 1738152945667-14
       author: aaaa (generated)
@@ -217,11 +217,11 @@ databaseChangeLog:
             cacheSize: 1
             cycle: false
             dataType: bigint
-            incrementBy: 50
+            incrementBy: 1
             maxValue: 9223372036854775807
-            minValue: 1
+            minValue: 11
             sequenceName: performers_seq
-            startValue: 1
+            startValue: 11
   - changeSet:
       id: 1738152945667-15
       author: aaaa (generated)
@@ -230,7 +230,7 @@ databaseChangeLog:
             cacheSize: 1
             cycle: false
             dataType: bigint
-            incrementBy: 50
+            incrementBy: 1
             maxValue: 9223372036854775807
             minValue: 1
             sequenceName: product_items_seq
@@ -243,11 +243,11 @@ databaseChangeLog:
             cacheSize: 1
             cycle: false
             dataType: bigint
-            incrementBy: 50
+            incrementBy: 1
             maxValue: 9223372036854775807
-            minValue: 1
+            minValue: 76
             sequenceName: product_tags_seq
-            startValue: 1
+            startValue: 76
   - changeSet:
       id: 1738152945667-17
       author: aaaa (generated)
@@ -256,11 +256,11 @@ databaseChangeLog:
             cacheSize: 1
             cycle: false
             dataType: bigint
-            incrementBy: 50
+            incrementBy: 1
             maxValue: 9223372036854775807
-            minValue: 1
+            minValue: 26
             sequenceName: products_seq
-            startValue: 1
+            startValue: 26
   - changeSet:
       id: 1738152945667-18
       author: aaaa (generated)
@@ -269,11 +269,11 @@ databaseChangeLog:
             cacheSize: 1
             cycle: false
             dataType: bigint
-            incrementBy: 50
+            incrementBy: 1
             maxValue: 9223372036854775807
-            minValue: 1
+            minValue: 11
             sequenceName: tags_seq
-            startValue: 1
+            startValue: 11
   - changeSet:
       id: 1738152945667-19
       author: aaaa (generated)

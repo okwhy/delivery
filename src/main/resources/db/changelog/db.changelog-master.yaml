@@ -1,5 +1,6 @@
 databaseChangeLog:
     - include:
-          file: src/main/resources/db/changelog/changes-01-initial-schema.yaml
-#    - include:
-#          file: src/main/resources/db/changelog/changes-02-test-data.yaml
+
+          file: db/changelog/changes-01-initial-schema.yaml
+    - include:
+          file: db/changelog/changes-02-test-data.yaml

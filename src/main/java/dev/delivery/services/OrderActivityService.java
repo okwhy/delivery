@@ -30,6 +30,8 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
+import static java.util.Map.entry;
+
 @Slf4j
 @Service
 @RequiredArgsConstructor
@@ -39,6 +41,7 @@ public class OrderActivityService {
     private final OrderActivityCreateMapper activityCreateMapper;
     private final OrderActivityMapper activityMapper;
     private final PerformerRepo performerRepo;
+    //todo в конфиг
     private final Map<Role, Set<Status>> ROLE_STATUS_MAP = Map.of(
             Role.MANAGER, Set.of(Status.CREATED, Status.CANCELED, Status.PENDING_PACKED, Status.PACKED, Status.PENDING_DELIVERY, Status.DELIVERED, Status.COMPLETED),
             Role.PACKER, Set.of(Status.PENDING_PACKED, Status.PACKED),
@@ -47,6 +50,15 @@ public class OrderActivityService {
     private final Map<Role, Set<Status>> STATUSES_ONLY_PERFORMER = Map.of(
             Role.PACKER, Set.of(Status.PACKED),
             Role.COURIER, Set.of(Status.DELIVERED)
+    );
+    private static final Map<Status, Set<Status>> STATUS_TRANSITIONS = Map.ofEntries(
+            entry(Status.CREATED, Set.of(Status.PENDING_PACKED, Status.CANCELED)),
+            entry(Status.PENDING_PACKED, Set.of(Status.PACKED, Status.CANCELED)),
+            entry(Status.PACKED, Set.of(Status.PENDING_DELIVERY, Status.CANCELED)),
+            entry(Status.PENDING_DELIVERY, Set.of(Status.DELIVERED, Status.CANCELED)),
+            entry(Status.DELIVERED, Set.of(Status.COMPLETED, Status.CANCELED)),
+            entry(Status.COMPLETED, Set.of()),
+            entry(Status.CANCELED, Set.of())
     );
     private final OrderForClientMapper orderForClientMapper;
 
@@ -133,7 +145,6 @@ public class OrderActivityService {
         }
         OrderActivityEntity activity = activityCreateMapper.toEntity(data);
         activity.setOrder(orderRepo.findById(data.getOrder()).orElseThrow());
-        log.info("Created activity {}", activity.getOrder().getId());
         activity.setTimestamp(LocalDateTime.now());
         activity.setPerformer(performerRepo.getReferenceById(userid));
         return activityMapper.toDto(orderActivityRepo.save(activity));
@@ -146,7 +157,7 @@ public class OrderActivityService {
         if (currentStatus == null) {
             return newStatus == Status.CREATED;
         }
-
-        return newStatus.ordinal() == currentStatus.ordinal() + 1;
+        Set<Status> allowedTransitions = STATUS_TRANSITIONS.get(currentStatus);
+        return allowedTransitions != null && allowedTransitions.contains(newStatus);
     }
 }

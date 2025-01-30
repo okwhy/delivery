@@ -1,13 +1,1857 @@
 databaseChangeLog:
   - changeSet:
-      id: seed-data
-      author: aaaaaaa
+      id: 1738256760967-1
+      author: xzibi (generated)
       changes:
-          - customChange:
-              class: dev.delivery.liquibase.InitializerChange
-      rollback:
-          - sql:
-              sql: |
-                DELETE FROM performers;
-                DELETE FROM tags;
-                DELETE FROM products;
+        - insert:
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 1
+              - column:
+                  name: password
+                  value: $2a$10$Hpwkv05JCEjLra5C.7U.VO1nxCvxxul1VC.SO/.9096JOfb3MpPC.
+            tableName: password
+        - insert:
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 2
+              - column:
+                  name: password
+                  value: $2a$10$YLtnKBrAadujs2WCsxfnReAODjXuUO07MV0qpKma0/Te6uIl4T5MK
+            tableName: password
+        - insert:
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 3
+              - column:
+                  name: password
+                  value: $2a$10$MQ/oTkACauPzHhlETD0Yv.TlUnPzMtYwiH0dePL0IRDy9qDEdJJ4O
+            tableName: password
+        - insert:
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 4
+              - column:
+                  name: password
+                  value: $2a$10$tABo2BUYGBKhtfCJ.TPHl.ohZbGYyNGn1IRetnLNzWnRPIsdsP6x.
+            tableName: password
+        - insert:
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 5
+              - column:
+                  name: password
+                  value: $2a$10$BkwTkEy7QSqC.qIziLpzU.9AdYNdt5ug/sweGnfdlqfw9pZymkjB.
+            tableName: password
+        - insert:
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 6
+              - column:
+                  name: password
+                  value: $2a$10$oqLO5e0NLnuN3nis1rM6yeRDqyTml0RZhCyGI6CCVqPS8P64RJUyW
+            tableName: password
+        - insert:
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 7
+              - column:
+                  name: password
+                  value: $2a$10$PhdHpJvTn348EWKdld/YBO8rLeQ7ao.70qkGLOpp/fXlUzrsbUHJq
+            tableName: password
+        - insert:
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 8
+              - column:
+                  name: password
+                  value: $2a$10$xfAf7Hgu2OmvZzu3WzLIG.UZVvx.juCh4KgDEyCiKtvCnpK.0msU6
+            tableName: password
+        - insert:
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 9
+              - column:
+                  name: password
+                  value: $2a$10$jMG5eMXuq8lWwxbJ.C35eet19Gc73YO1zNw5BCjNuHU6w0lFQqOgq
+            tableName: password
+        - insert:
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 10
+              - column:
+                  name: password
+                  value: $2a$10$lLLl22E0nyxofrBgOMGPEeLanSmeOxh6ubaJtJLYYFFXhat3/miLa
+            tableName: password
+  - changeSet:
+      id: 1738256760967-2
+      author: xzibi (generated)
+      changes:
+        - insert:
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 1
+              - column:
+                  name: username
+                  value: aaaa@gmail.com
+              - column:
+                  name: password_id
+                  valueNumeric: 1
+            tableName: credentials
+        - insert:
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 2
+              - column:
+                  name: username
+                  value: bbbb@gmail.com
+              - column:
+                  name: password_id
+                  valueNumeric: 2
+            tableName: credentials
+        - insert:
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 3
+              - column:
+                  name: username
+                  value: cccc@gmail.com
+              - column:
+                  name: password_id
+                  valueNumeric: 3
+            tableName: credentials
+        - insert:
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 4
+              - column:
+                  name: username
+                  value: leslie.bosco@yahoo.com
+              - column:
+                  name: password_id
+                  valueNumeric: 4
+            tableName: credentials
+        - insert:
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 5
+              - column:
+                  name: username
+                  value: margit.kerluke@gmail.com
+              - column:
+                  name: password_id
+                  valueNumeric: 5
+            tableName: credentials
+        - insert:
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 6
+              - column:
+                  name: username
+                  value: shantay.ratke@yahoo.com
+              - column:
+                  name: password_id
+                  valueNumeric: 6
+            tableName: credentials
+        - insert:
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 7
+              - column:
+                  name: username
+                  value: alexandra.boyle@yahoo.com
+              - column:
+                  name: password_id
+                  valueNumeric: 7
+            tableName: credentials
+        - insert:
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 8
+              - column:
+                  name: username
+                  value: mee.braun@gmail.com
+              - column:
+                  name: password_id
+                  valueNumeric: 8
+            tableName: credentials
+        - insert:
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 9
+              - column:
+                  name: username
+                  value: somer.quitzon@yahoo.com
+              - column:
+                  name: password_id
+                  valueNumeric: 9
+            tableName: credentials
+        - insert:
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 10
+              - column:
+                  name: username
+                  value: rueben.schuppe@hotmail.com
+              - column:
+                  name: password_id
+                  valueNumeric: 10
+            tableName: credentials
+  - changeSet:
+      id: 1738256760967-3
+      author: xzibi (generated)
+      changes:
+        - insert:
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 1
+              - column:
+                  name: fio
+                  value: Carmon Jaskolski
+              - column:
+                  name: phone
+                  value: (730) 687-5143
+              - column:
+                  name: role
+                  value: MANAGER
+              - column:
+                  name: credential
+                  valueNumeric: 1
+            tableName: performers
+        - insert:
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 2
+              - column:
+                  name: fio
+                  value: Marlyn Cummerata
+              - column:
+                  name: phone
+                  value: (512) 693-0085
+              - column:
+                  name: role
+                  value: PACKER
+              - column:
+                  name: credential
+                  valueNumeric: 2
+            tableName: performers
+        - insert:
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 3
+              - column:
+                  name: fio
+                  value: Mariela Ward
+              - column:
+                  name: phone
+                  value: (515) 700-7188
+              - column:
+                  name: role
+                  value: COURIER
+              - column:
+                  name: credential
+                  valueNumeric: 3
+            tableName: performers
+        - insert:
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 4
+              - column:
+                  name: fio
+                  value: Mrs. Marvin Hahn
+              - column:
+                  name: phone
+                  value: (305) 636-2655
+              - column:
+                  name: role
+                  value: PACKER
+              - column:
+                  name: credential
+                  valueNumeric: 4
+            tableName: performers
+        - insert:
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 5
+              - column:
+                  name: fio
+                  value: Cruz Rolfson
+              - column:
+                  name: phone
+                  value: (870) 435-0522
+              - column:
+                  name: role
+                  value: MANAGER
+              - column:
+                  name: credential
+                  valueNumeric: 5
+            tableName: performers
+        - insert:
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 6
+              - column:
+                  name: fio
+                  value: Coleman Lang IV
+              - column:
+                  name: phone
+                  value: (305) 752-2886
+              - column:
+                  name: role
+                  value: PACKER
+              - column:
+                  name: credential
+                  valueNumeric: 6
+            tableName: performers
+        - insert:
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 7
+              - column:
+                  name: fio
+                  value: Heidi Torphy
+              - column:
+                  name: phone
+                  value: (234) 325-6320
+              - column:
+                  name: role
+                  value: MANAGER
+              - column:
+                  name: credential
+                  valueNumeric: 7
+            tableName: performers
+        - insert:
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 8
+              - column:
+                  name: fio
+                  value: Hildred Hintz
+              - column:
+                  name: phone
+                  value: (305) 294-9386
+              - column:
+                  name: role
+                  value: COURIER
+              - column:
+                  name: credential
+                  valueNumeric: 8
+            tableName: performers
+        - insert:
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 9
+              - column:
+                  name: fio
+                  value: Lachelle Stanton
+              - column:
+                  name: phone
+                  value: (730) 630-9624
+              - column:
+                  name: role
+                  value: MANAGER
+              - column:
+                  name: credential
+                  valueNumeric: 9
+            tableName: performers
+        - insert:
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 10
+              - column:
+                  name: fio
+                  value: Stephen Spencer
+              - column:
+                  name: phone
+                  value: (323) 319-3790
+              - column:
+                  name: role
+                  value: MANAGER
+              - column:
+                  name: credential
+                  valueNumeric: 10
+            tableName: performers
+  - changeSet:
+      id: 1738256760967-4
+      author: xzibi (generated)
+      changes:
+        - insert:
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 1
+              - column:
+                  name: availability
+                  value: IN_STOCK
+              - column:
+                  name: description
+                  value: Architecto cupiditate excepturi architecto odio itaque.
+              - column:
+                  name: price
+                  valueNumeric: 529.80
+              - column:
+                  name: title
+                  value: Ergonomic Concrete Shirt
+            tableName: products
+        - insert:
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 2
+              - column:
+                  name: availability
+                  value: IN_STOCK
+              - column:
+                  name: description
+                  value: Cumque consectetur consequuntur unde aliquam quas mollitia.
+              - column:
+                  name: price
+                  valueNumeric: 160.63
+              - column:
+                  name: title
+                  value: Ergonomic Bronze Bottle
+            tableName: products
+        - insert:
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 3
+              - column:
+                  name: availability
+                  value: IN_STOCK
+              - column:
+                  name: description
+                  value: Ipsum laudantium itaque animi eaque excepturi illum est.
+              - column:
+                  name: price
+                  valueNumeric: 260.26
+              - column:
+                  name: title
+                  value: Practical Rubber Pants
+            tableName: products
+        - insert:
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 4
+              - column:
+                  name: availability
+                  value: OUT_OF_STOCK
+              - column:
+                  name: description
+                  value: Eum est asperiores molestias repudiandae voluptate.
+              - column:
+                  name: price
+                  valueNumeric: 771.67
+              - column:
+                  name: title
+                  value: Synergistic Linen Hat
+            tableName: products
+        - insert:
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 5
+              - column:
+                  name: availability
+                  value: IN_STOCK
+              - column:
+                  name: description
+                  value: Iure quia porro laborum.
+              - column:
+                  name: price
+                  valueNumeric: 582.72
+              - column:
+                  name: title
+                  value: Practical Bronze Pants
+            tableName: products
+        - insert:
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 6
+              - column:
+                  name: availability
+                  value: OUT_OF_STOCK
+              - column:
+                  name: description
+                  value: Quas laudantium reprehenderit dolor.
+              - column:
+                  name: price
+                  valueNumeric: 780.07
+              - column:
+                  name: title
+                  value: Practical Plastic Shirt
+            tableName: products
+        - insert:
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 7
+              - column:
+                  name: availability
+                  value: IN_STOCK
+              - column:
+                  name: description
+                  value: Repellat enim ipsum.
+              - column:
+                  name: price
+                  valueNumeric: 43.94
+              - column:
+                  name: title
+                  value: Intelligent Leather Clock
+            tableName: products
+        - insert:
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 8
+              - column:
+                  name: availability
+                  value: NOT_AVAILABLE
+              - column:
+                  name: description
+                  value: Perspiciatis asperiores minima sequi.
+              - column:
+                  name: price
+                  valueNumeric: 286.29
+              - column:
+                  name: title
+                  value: Sleek Granite Lamp
+            tableName: products
+        - insert:
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 9
+              - column:
+                  name: availability
+                  value: OUT_OF_STOCK
+              - column:
+                  name: description
+                  value: Aliquam optio perspiciatis.
+              - column:
+                  name: price
+                  valueNumeric: 405.60
+              - column:
+                  name: title
+                  value: Incredible Rubber Car
+            tableName: products
+        - insert:
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 10
+              - column:
+                  name: availability
+                  value: IN_STOCK
+              - column:
+                  name: description
+                  value: Aliquam est ad inventore a libero sunt.
+              - column:
+                  name: price
+                  valueNumeric: 521.22
+              - column:
+                  name: title
+                  value: Heavy Duty Copper Car
+            tableName: products
+        - insert:
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 11
+              - column:
+                  name: availability
+                  value: NOT_AVAILABLE
+              - column:
+                  name: description
+                  value: Sapiente odit debitis nihil iure.
+              - column:
+                  name: price
+                  valueNumeric: 784.53
+              - column:
+                  name: title
+                  value: Rustic Paper Shirt
+            tableName: products
+        - insert:
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 12
+              - column:
+                  name: availability
+                  value: NOT_AVAILABLE
+              - column:
+                  name: description
+                  value: Sed omnis repellendus.
+              - column:
+                  name: price
+                  valueNumeric: 129.08
+              - column:
+                  name: title
+                  value: Synergistic Rubber Shirt
+            tableName: products
+        - insert:
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 13
+              - column:
+                  name: availability
+                  value: NOT_AVAILABLE
+              - column:
+                  name: description
+                  value: Molestiae sunt quos veritatis maxime consectetur.
+              - column:
+                  name: price
+                  valueNumeric: 516.07
+              - column:
+                  name: title
+                  value: Practical Leather Keyboard
+            tableName: products
+        - insert:
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 14
+              - column:
+                  name: availability
+                  value: OUT_OF_STOCK
+              - column:
+                  name: description
+                  value: Odio ipsa aut veritatis cumque tenetur.
+              - column:
+                  name: price
+                  valueNumeric: 107.24
+              - column:
+                  name: title
+                  value: Lightweight Iron Coat
+            tableName: products
+        - insert:
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 15
+              - column:
+                  name: availability
+                  value: IN_STOCK
+              - column:
+                  name: description
+                  value: Hic numquam occaecati quas consequuntur laudantium quo similique.
+              - column:
+                  name: price
+                  valueNumeric: 242.60
+              - column:
+                  name: title
+                  value: Lightweight Marble Car
+            tableName: products
+        - insert:
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 16
+              - column:
+                  name: availability
+                  value: OUT_OF_STOCK
+              - column:
+                  name: description
+                  value: Reiciendis aliquam sit praesentium numquam.
+              - column:
+                  name: price
+                  valueNumeric: 88.68
+              - column:
+                  name: title
+                  value: Synergistic Plastic Wallet
+            tableName: products
+        - insert:
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 17
+              - column:
+                  name: availability
+                  value: OUT_OF_STOCK
+              - column:
+                  name: description
+                  value: Voluptatem quo incidunt.
+              - column:
+                  name: price
+                  valueNumeric: 586.74
+              - column:
+                  name: title
+                  value: Rustic Cotton Knife
+            tableName: products
+        - insert:
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 18
+              - column:
+                  name: availability
+                  value: NOT_AVAILABLE
+              - column:
+                  name: description
+                  value: Distinctio debitis unde.
+              - column:
+                  name: price
+                  valueNumeric: 120.25
+              - column:
+                  name: title
+                  value: Rustic Paper Shirt
+            tableName: products
+        - insert:
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 19
+              - column:
+                  name: availability
+                  value: IN_STOCK
+              - column:
+                  name: description
+                  value: Minima accusantium hic sequi molestias doloremque dolore.
+              - column:
+                  name: price
+                  valueNumeric: 419.13
+              - column:
+                  name: title
+                  value: Mediocre Rubber Wallet
+            tableName: products
+        - insert:
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 20
+              - column:
+                  name: availability
+                  value: IN_STOCK
+              - column:
+                  name: description
+                  value: Illo alias iure aliquam illum.
+              - column:
+                  name: price
+                  valueNumeric: 896.29
+              - column:
+                  name: title
+                  value: Awesome Rubber Table
+            tableName: products
+        - insert:
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 21
+              - column:
+                  name: availability
+                  value: OUT_OF_STOCK
+              - column:
+                  name: description
+                  value: Nulla voluptate dolorum commodi consectetur.
+              - column:
+                  name: price
+                  valueNumeric: 994.81
+              - column:
+                  name: title
+                  value: Awesome Bronze Knife
+            tableName: products
+        - insert:
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 22
+              - column:
+                  name: availability
+                  value: IN_STOCK
+              - column:
+                  name: description
+                  value: Nisi facilis in.
+              - column:
+                  name: price
+                  valueNumeric: 92.90
+              - column:
+                  name: title
+                  value: Gorgeous Iron Clock
+            tableName: products
+        - insert:
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 23
+              - column:
+                  name: availability
+                  value: NOT_AVAILABLE
+              - column:
+                  name: description
+                  value: Placeat excepturi quibusdam eum expedita magnam aut.
+              - column:
+                  name: price
+                  valueNumeric: 215.37
+              - column:
+                  name: title
+                  value: Practical Paper Pants
+            tableName: products
+        - insert:
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 24
+              - column:
+                  name: availability
+                  value: NOT_AVAILABLE
+              - column:
+                  name: description
+                  value: Culpa cumque vel maiores cupiditate molestiae consequatur.
+              - column:
+                  name: price
+                  valueNumeric: 183.22
+              - column:
+                  name: title
+                  value: Lightweight Granite Chair
+            tableName: products
+        - insert:
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 25
+              - column:
+                  name: availability
+                  value: IN_STOCK
+              - column:
+                  name: description
+                  value: Sed tenetur optio ducimus soluta.
+              - column:
+                  name: price
+                  valueNumeric: 948.13
+              - column:
+                  name: title
+                  value: Durable Iron Chair
+            tableName: products
+  - changeSet:
+      id: 1738256760967-5
+      author: xzibi (generated)
+      changes:
+        - insert:
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 1
+              - column:
+                  name: tag
+                  value: minus
+            tableName: tags
+        - insert:
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 2
+              - column:
+                  name: tag
+                  value: pariatur
+            tableName: tags
+        - insert:
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 3
+              - column:
+                  name: tag
+                  value: a
+            tableName: tags
+        - insert:
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 4
+              - column:
+                  name: tag
+                  value: laboriosam
+            tableName: tags
+        - insert:
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 5
+              - column:
+                  name: tag
+                  value: sunt
+            tableName: tags
+        - insert:
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 6
+              - column:
+                  name: tag
+                  value: officiis
+            tableName: tags
+        - insert:
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 7
+              - column:
+                  name: tag
+                  value: deserunt
+            tableName: tags
+        - insert:
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 8
+              - column:
+                  name: tag
+                  value: illo
+            tableName: tags
+        - insert:
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 9
+              - column:
+                  name: tag
+                  value: optio
+            tableName: tags
+        - insert:
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 10
+              - column:
+                  name: tag
+                  value: quos
+            tableName: tags
+
+  - changeSet:
+      id: 1738256760967-6
+      author: xzibi (generated)
+      changes:
+        - insert:
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 1
+              - column:
+                  name: product_id
+                  valueNumeric: 1
+              - column:
+                  name: tag_id
+                  valueNumeric: 4
+            tableName: product_tags
+        - insert:
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 2
+              - column:
+                  name: product_id
+                  valueNumeric: 1
+              - column:
+                  name: tag_id
+                  valueNumeric: 3
+            tableName: product_tags
+        - insert:
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 3
+              - column:
+                  name: product_id
+                  valueNumeric: 1
+              - column:
+                  name: tag_id
+                  valueNumeric: 8
+            tableName: product_tags
+        - insert:
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 4
+              - column:
+                  name: product_id
+                  valueNumeric: 2
+              - column:
+                  name: tag_id
+                  valueNumeric: 2
+            tableName: product_tags
+        - insert:
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 5
+              - column:
+                  name: product_id
+                  valueNumeric: 2
+              - column:
+                  name: tag_id
+                  valueNumeric: 8
+            tableName: product_tags
+        - insert:
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 6
+              - column:
+                  name: product_id
+                  valueNumeric: 2
+              - column:
+                  name: tag_id
+                  valueNumeric: 2
+            tableName: product_tags
+        - insert:
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 7
+              - column:
+                  name: product_id
+                  valueNumeric: 3
+              - column:
+                  name: tag_id
+                  valueNumeric: 4
+            tableName: product_tags
+        - insert:
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 8
+              - column:
+                  name: product_id
+                  valueNumeric: 3
+              - column:
+                  name: tag_id
+                  valueNumeric: 2
+            tableName: product_tags
+        - insert:
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 9
+              - column:
+                  name: product_id
+                  valueNumeric: 3
+              - column:
+                  name: tag_id
+                  valueNumeric: 4
+            tableName: product_tags
+        - insert:
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 10
+              - column:
+                  name: product_id
+                  valueNumeric: 4
+              - column:
+                  name: tag_id
+                  valueNumeric: 5
+            tableName: product_tags
+        - insert:
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 11
+              - column:
+                  name: product_id
+                  valueNumeric: 4
+              - column:
+                  name: tag_id
+                  valueNumeric: 2
+            tableName: product_tags
+        - insert:
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 12
+              - column:
+                  name: product_id
+                  valueNumeric: 4
+              - column:
+                  name: tag_id
+                  valueNumeric: 1
+            tableName: product_tags
+        - insert:
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 13
+              - column:
+                  name: product_id
+                  valueNumeric: 5
+              - column:
+                  name: tag_id
+                  valueNumeric: 6
+            tableName: product_tags
+        - insert:
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 14
+              - column:
+                  name: product_id
+                  valueNumeric: 5
+              - column:
+                  name: tag_id
+                  valueNumeric: 9
+            tableName: product_tags
+        - insert:
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 15
+              - column:
+                  name: product_id
+                  valueNumeric: 5
+              - column:
+                  name: tag_id
+                  valueNumeric: 3
+            tableName: product_tags
+        - insert:
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 16
+              - column:
+                  name: product_id
+                  valueNumeric: 6
+              - column:
+                  name: tag_id
+                  valueNumeric: 4
+            tableName: product_tags
+        - insert:
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 17
+              - column:
+                  name: product_id
+                  valueNumeric: 6
+              - column:
+                  name: tag_id
+                  valueNumeric: 5
+            tableName: product_tags
+        - insert:
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 18
+              - column:
+                  name: product_id
+                  valueNumeric: 6
+              - column:
+                  name: tag_id
+                  valueNumeric: 3
+            tableName: product_tags
+        - insert:
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 19
+              - column:
+                  name: product_id
+                  valueNumeric: 7
+              - column:
+                  name: tag_id
+                  valueNumeric: 8
+            tableName: product_tags
+        - insert:
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 20
+              - column:
+                  name: product_id
+                  valueNumeric: 7
+              - column:
+                  name: tag_id
+                  valueNumeric: 8
+            tableName: product_tags
+        - insert:
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 21
+              - column:
+                  name: product_id
+                  valueNumeric: 7
+              - column:
+                  name: tag_id
+                  valueNumeric: 1
+            tableName: product_tags
+        - insert:
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 22
+              - column:
+                  name: product_id
+                  valueNumeric: 8
+              - column:
+                  name: tag_id
+                  valueNumeric: 4
+            tableName: product_tags
+        - insert:
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 23
+              - column:
+                  name: product_id
+                  valueNumeric: 8
+              - column:
+                  name: tag_id
+                  valueNumeric: 4
+            tableName: product_tags
+        - insert:
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 24
+              - column:
+                  name: product_id
+                  valueNumeric: 8
+              - column:
+                  name: tag_id
+                  valueNumeric: 7
+            tableName: product_tags
+        - insert:
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 25
+              - column:
+                  name: product_id
+                  valueNumeric: 9
+              - column:
+                  name: tag_id
+                  valueNumeric: 7
+            tableName: product_tags
+        - insert:
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 26
+              - column:
+                  name: product_id
+                  valueNumeric: 9
+              - column:
+                  name: tag_id
+                  valueNumeric: 8
+            tableName: product_tags
+        - insert:
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 27
+              - column:
+                  name: product_id
+                  valueNumeric: 9
+              - column:
+                  name: tag_id
+                  valueNumeric: 1
+            tableName: product_tags
+        - insert:
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 28
+              - column:
+                  name: product_id
+                  valueNumeric: 10
+              - column:
+                  name: tag_id
+                  valueNumeric: 9
+            tableName: product_tags
+        - insert:
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 29
+              - column:
+                  name: product_id
+                  valueNumeric: 10
+              - column:
+                  name: tag_id
+                  valueNumeric: 2
+            tableName: product_tags
+        - insert:
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 30
+              - column:
+                  name: product_id
+                  valueNumeric: 10
+              - column:
+                  name: tag_id
+                  valueNumeric: 4
+            tableName: product_tags
+        - insert:
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 31
+              - column:
+                  name: product_id
+                  valueNumeric: 11
+              - column:
+                  name: tag_id
+                  valueNumeric: 3
+            tableName: product_tags
+        - insert:
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 32
+              - column:
+                  name: product_id
+                  valueNumeric: 11
+              - column:
+                  name: tag_id
+                  valueNumeric: 2
+            tableName: product_tags
+        - insert:
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 33
+              - column:
+                  name: product_id
+                  valueNumeric: 11
+              - column:
+                  name: tag_id
+                  valueNumeric: 3
+            tableName: product_tags
+        - insert:
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 34
+              - column:
+                  name: product_id
+                  valueNumeric: 12
+              - column:
+                  name: tag_id
+                  valueNumeric: 9
+            tableName: product_tags
+        - insert:
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 35
+              - column:
+                  name: product_id
+                  valueNumeric: 12
+              - column:
+                  name: tag_id
+                  valueNumeric: 6
+            tableName: product_tags
+        - insert:
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 36
+              - column:
+                  name: product_id
+                  valueNumeric: 12
+              - column:
+                  name: tag_id
+                  valueNumeric: 9
+            tableName: product_tags
+        - insert:
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 37
+              - column:
+                  name: product_id
+                  valueNumeric: 13
+              - column:
+                  name: tag_id
+                  valueNumeric: 4
+            tableName: product_tags
+        - insert:
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 38
+              - column:
+                  name: product_id
+                  valueNumeric: 13
+              - column:
+                  name: tag_id
+                  valueNumeric: 1
+            tableName: product_tags
+        - insert:
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 39
+              - column:
+                  name: product_id
+                  valueNumeric: 13
+              - column:
+                  name: tag_id
+                  valueNumeric: 1
+            tableName: product_tags
+        - insert:
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 40
+              - column:
+                  name: product_id
+                  valueNumeric: 14
+              - column:
+                  name: tag_id
+                  valueNumeric: 9
+            tableName: product_tags
+        - insert:
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 41
+              - column:
+                  name: product_id
+                  valueNumeric: 14
+              - column:
+                  name: tag_id
+                  valueNumeric: 7
+            tableName: product_tags
+        - insert:
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 42
+              - column:
+                  name: product_id
+                  valueNumeric: 14
+              - column:
+                  name: tag_id
+                  valueNumeric: 3
+            tableName: product_tags
+        - insert:
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 43
+              - column:
+                  name: product_id
+                  valueNumeric: 15
+              - column:
+                  name: tag_id
+                  valueNumeric: 2
+            tableName: product_tags
+        - insert:
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 44
+              - column:
+                  name: product_id
+                  valueNumeric: 15
+              - column:
+                  name: tag_id
+                  valueNumeric: 2
+            tableName: product_tags
+        - insert:
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 45
+              - column:
+                  name: product_id
+                  valueNumeric: 15
+              - column:
+                  name: tag_id
+                  valueNumeric: 3
+            tableName: product_tags
+        - insert:
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 46
+              - column:
+                  name: product_id
+                  valueNumeric: 16
+              - column:
+                  name: tag_id
+                  valueNumeric: 4
+            tableName: product_tags
+        - insert:
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 47
+              - column:
+                  name: product_id
+                  valueNumeric: 16
+              - column:
+                  name: tag_id
+                  valueNumeric: 2
+            tableName: product_tags
+        - insert:
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 48
+              - column:
+                  name: product_id
+                  valueNumeric: 16
+              - column:
+                  name: tag_id
+                  valueNumeric: 3
+            tableName: product_tags
+        - insert:
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 49
+              - column:
+                  name: product_id
+                  valueNumeric: 17
+              - column:
+                  name: tag_id
+                  valueNumeric: 9
+            tableName: product_tags
+        - insert:
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 50
+              - column:
+                  name: product_id
+                  valueNumeric: 17
+              - column:
+                  name: tag_id
+                  valueNumeric: 1
+            tableName: product_tags
+        - insert:
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 51
+              - column:
+                  name: product_id
+                  valueNumeric: 17
+              - column:
+                  name: tag_id
+                  valueNumeric: 7
+            tableName: product_tags
+        - insert:
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 52
+              - column:
+                  name: product_id
+                  valueNumeric: 18
+              - column:
+                  name: tag_id
+                  valueNumeric: 5
+            tableName: product_tags
+        - insert:
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 53
+              - column:
+                  name: product_id
+                  valueNumeric: 18
+              - column:
+                  name: tag_id
+                  valueNumeric: 3
+            tableName: product_tags
+        - insert:
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 54
+              - column:
+                  name: product_id
+                  valueNumeric: 18
+              - column:
+                  name: tag_id
+                  valueNumeric: 1
+            tableName: product_tags
+        - insert:
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 55
+              - column:
+                  name: product_id
+                  valueNumeric: 19
+              - column:
+                  name: tag_id
+                  valueNumeric: 4
+            tableName: product_tags
+        - insert:
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 56
+              - column:
+                  name: product_id
+                  valueNumeric: 19
+              - column:
+                  name: tag_id
+                  valueNumeric: 6
+            tableName: product_tags
+        - insert:
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 57
+              - column:
+                  name: product_id
+                  valueNumeric: 19
+              - column:
+                  name: tag_id
+                  valueNumeric: 5
+            tableName: product_tags
+        - insert:
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 58
+              - column:
+                  name: product_id
+                  valueNumeric: 20
+              - column:
+                  name: tag_id
+                  valueNumeric: 2
+            tableName: product_tags
+        - insert:
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 59
+              - column:
+                  name: product_id
+                  valueNumeric: 20
+              - column:
+                  name: tag_id
+                  valueNumeric: 5
+            tableName: product_tags
+        - insert:
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 60
+              - column:
+                  name: product_id
+                  valueNumeric: 20
+              - column:
+                  name: tag_id
+                  valueNumeric: 4
+            tableName: product_tags
+        - insert:
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 61
+              - column:
+                  name: product_id
+                  valueNumeric: 21
+              - column:
+                  name: tag_id
+                  valueNumeric: 9
+            tableName: product_tags
+        - insert:
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 62
+              - column:
+                  name: product_id
+                  valueNumeric: 21
+              - column:
+                  name: tag_id
+                  valueNumeric: 1
+            tableName: product_tags
+        - insert:
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 63
+              - column:
+                  name: product_id
+                  valueNumeric: 21
+              - column:
+                  name: tag_id
+                  valueNumeric: 9
+            tableName: product_tags
+        - insert:
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 64
+              - column:
+                  name: product_id
+                  valueNumeric: 22
+              - column:
+                  name: tag_id
+                  valueNumeric: 5
+            tableName: product_tags
+        - insert:
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 65
+              - column:
+                  name: product_id
+                  valueNumeric: 22
+              - column:
+                  name: tag_id
+                  valueNumeric: 7
+            tableName: product_tags
+        - insert:
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 66
+              - column:
+                  name: product_id
+                  valueNumeric: 22
+              - column:
+                  name: tag_id
+                  valueNumeric: 3
+            tableName: product_tags
+        - insert:
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 67
+              - column:
+                  name: product_id
+                  valueNumeric: 23
+              - column:
+                  name: tag_id
+                  valueNumeric: 1
+            tableName: product_tags
+        - insert:
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 68
+              - column:
+                  name: product_id
+                  valueNumeric: 23
+              - column:
+                  name: tag_id
+                  valueNumeric: 4
+            tableName: product_tags
+        - insert:
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 69
+              - column:
+                  name: product_id
+                  valueNumeric: 23
+              - column:
+                  name: tag_id
+                  valueNumeric: 9
+            tableName: product_tags
+        - insert:
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 70
+              - column:
+                  name: product_id
+                  valueNumeric: 24
+              - column:
+                  name: tag_id
+                  valueNumeric: 3
+            tableName: product_tags
+        - insert:
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 71
+              - column:
+                  name: product_id
+                  valueNumeric: 24
+              - column:
+                  name: tag_id
+                  valueNumeric: 5
+            tableName: product_tags
+        - insert:
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 72
+              - column:
+                  name: product_id
+                  valueNumeric: 24
+              - column:
+                  name: tag_id
+                  valueNumeric: 8
+            tableName: product_tags
+        - insert:
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 73
+              - column:
+                  name: product_id
+                  valueNumeric: 25
+              - column:
+                  name: tag_id
+                  valueNumeric: 4
+            tableName: product_tags
+        - insert:
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 74
+              - column:
+                  name: product_id
+                  valueNumeric: 25
+              - column:
+                  name: tag_id
+                  valueNumeric: 1
+            tableName: product_tags
+        - insert:
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 75
+              - column:
+                  name: product_id
+                  valueNumeric: 25
+              - column:
+                  name: tag_id
+                  valueNumeric: 6
+            tableName: product_tags
+
